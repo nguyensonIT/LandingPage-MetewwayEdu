@@ -20,7 +20,7 @@ body {
     font-size: 24px;
     color: var(--text-color-primary);
     text-align: center;
-
+    line-height: 185.5%;
 }
 
 .emphasize {
@@ -39,6 +39,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header .login {
+    margin-left: 16px;
 }
 
 .header__logo {
@@ -71,6 +75,7 @@ body {
     color: var(--white);
 }
 
+
 .login-btn:hover {
     background-color: #0367FC;
     transition: .5s;
@@ -86,6 +91,7 @@ body {
 .banner__bg img {
     width: 100%;
     object-fit: cover;
+    filter: brightness(0.7);
 }
 
 
@@ -106,6 +112,7 @@ body {
     font-size: 64px;
     color: var(--white);
     margin-bottom: 60px;
+    line-height: 110%;
 }
 
 
@@ -320,7 +327,7 @@ body {
 .footer__container {
     max-width: var(--width-footer);
     margin: auto;
-    padding-top: 158px;
+    padding: 158px 20px;
 }
 
 .footer__container-content {

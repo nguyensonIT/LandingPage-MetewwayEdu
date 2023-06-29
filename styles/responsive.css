@@ -30,6 +30,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .introduce {
+        margin-top: 120px;
+    }
 }
 
 @media only screen and (max-width : 1023px) {
@@ -52,6 +56,15 @@
 
     .solution__container-box:nth-child(3n+1) {
         order: 1;
+    }
+
+    .solution__container-text1,
+    .solution__container-text2 {
+        margin: 15px 0;
+    }
+
+    .benefit-title {
+        margin-bottom: 50px;
     }
 
     .learning__online-container {
@@ -100,8 +113,8 @@
     .learning__online,
     .benefit,
     .industries__container {
-        padding-left: unset;
-        padding-right: unset;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .banner__title {
@@ -129,8 +142,7 @@
 @media only screen and (max-width : 535px) {
     .banner__title {
         font-size: 24px;
-        white-space: unset;
-        margin-bottom: unset;
+        margin-bottom: 10px;
     }
 
     .header__logo {
@@ -140,6 +152,7 @@
 
     .login {
         height: 32px;
+        width: 200px;
     }
 
     .login-btn {
@@ -155,4 +168,11 @@
         height: unset;
     }
 
+}
+
+@media only screen and (max-width : 390px) {
+    .banner__title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
 }
