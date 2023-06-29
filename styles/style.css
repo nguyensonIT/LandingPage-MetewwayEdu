@@ -313,7 +313,7 @@ body {
 /* footer  */
 
 .footer {
-    height: 593px;
+    min-height: 593px;
     background: var(--color-footer);
 }
 

@@ -93,6 +93,17 @@
 }
 
 @media only screen and (max-width : 739px) {
+
+    .header,
+    .solution,
+    .introduce__main,
+    .learning__online,
+    .benefit,
+    .industries__container {
+        padding-left: unset;
+        padding-right: unset;
+    }
+
     .banner__title {
         font-size: 32px;
         margin-bottom: unset;
@@ -104,10 +115,15 @@
     }
 
     .footer__container-content {
-        display: grid;
-        grid-template-rows: auto 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
+
+    .footer__container-content__info+.footer__container-content__info {
+        margin-top: 20px;
+        margin-left: unset;
+    }
+
+
 }
 
 @media only screen and (max-width : 535px) {
@@ -128,6 +144,15 @@
 
     .login-btn {
         font-size: 16px;
+    }
+
+    .footer__container {
+        padding-bottom: 20px;
+    }
+
+    .footer__container-content__logo {
+        width: unset;
+        height: unset;
     }
 
 }
