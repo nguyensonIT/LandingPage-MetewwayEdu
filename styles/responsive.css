@@ -10,3 +10,124 @@
         padding-right: 40px;
     }
 }
+
+@media only screen and (max-width : 1300px) {
+
+    .banner__title {
+        font-size: 50px;
+    }
+
+    .benefit__container {
+        flex-direction: column;
+    }
+
+    .benefit__box+.benefit__box {
+        margin-left: unset;
+        margin-top: 40px;
+    }
+
+    .industries__container-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width : 1023px) {
+    .banner__title {
+        font-size: 36px;
+    }
+
+    .solution__container {
+        flex-direction: column;
+    }
+
+    .solution__container-box {
+        width: unset;
+
+    }
+
+    .solution__container-box p {
+        text-align: start;
+    }
+
+    .solution__container-box:nth-child(3n+1) {
+        order: 1;
+    }
+
+    .learning__online-container {
+        flex-direction: column;
+    }
+
+    .learning__online-box {
+        width: unset;
+    }
+
+    .learning__online-box+.learning__online-box {
+        margin-top: 40px;
+        margin-left: unset;
+    }
+
+    .footer__container {
+        padding-top: 80px;
+    }
+
+    .footer__container-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 40px;
+    }
+
+    .footer-line {
+        margin-top: 20px;
+    }
+
+    .footer__copyright {
+        text-align: center;
+    }
+
+    .footer__container-content__info+.footer__container-content__info {
+        margin-left: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width : 739px) {
+    .banner__title {
+        font-size: 32px;
+        margin-bottom: unset;
+    }
+
+    .industries__container-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer__container-content {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width : 535px) {
+    .banner__title {
+        font-size: 24px;
+        white-space: unset;
+        margin-bottom: unset;
+    }
+
+    .header__logo {
+        width: 300px;
+        height: 54px;
+    }
+
+    .login {
+        height: 32px;
+    }
+
+    .login-btn {
+        font-size: 16px;
+    }
+
+}

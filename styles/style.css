@@ -29,7 +29,7 @@ body {
 
 .container {
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .header {
@@ -47,6 +47,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 
 .header__logo img {
     width: 100%;
