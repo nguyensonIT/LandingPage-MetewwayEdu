@@ -54,11 +54,6 @@ body {
     object-fit: cover;
 }
 
-.login {
-    width: 238px;
-    height: 48px;
-}
-
 .login-btn {
     /* display: flex;
     align-items: center;
@@ -385,7 +380,7 @@ body {
 }
 
 
-.login-btn {
+/* .login-btn {
     box-shadow: inset 0 0 0 0 #0249B3;
     display: flex;
     align-items: center;
@@ -397,7 +392,6 @@ body {
     cursor: pointer;
     padding: 8px 20px;
     margin-bottom: 20px;
-    /* border: 2px solid #7692A7; */
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
@@ -411,4 +405,43 @@ body {
     transform: scale(1.05);
     color: #FFF;
     box-shadow: inset 240px 0px 0px 0px #0249B3;
+} */
+
+
+.login-btn, .login-btn-dark {
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 0 10px;
+    padding: 12px 24px;
+    box-shadow: 0 0 20px rgb(2, 73, 179, 0.2);
+    transition: 0.4s;
+    color: #0249B3;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #0249B3;
+    white-space: nowrap;
 }
+
+.login-btn:hover, .login-btn-dark:hover {
+    transform: scale(1.05);
+    color: white;
+    box-shadow: 0 0 20px #0249B3;
+    background-color: #0249B3;
+} 
+
+.login-btn-dark {
+    font-size: 30px;
+    padding: 24px 40px;
+    box-shadow: 0 0 20px rgb(2, 73, 179, 0.2);
+    color: #fff;
+    background-color: #0249B3;
+    border: 1px solid #0249B3;
+}
+
+.login-btn-dark:hover {
+    color: white;
+    box-shadow: 0 0 20px #002050;
+    background-color: #0249B3;
+} 
