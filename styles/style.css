@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --width-primary: 1590px;
+    --width-footer: 1140px;
+    --color-primary: #0249B3;
+    --white: #ffffff;
+    --text-color-primary: #303030;
+    --color-footer: #031521;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: var(--text-color-primary);
+    text-align: center;
+
+}
+
+.emphasize {
+    color: var(--color-primary);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 0 auto;
+    max-width: var(--width-primary);
+    height: 158px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 324px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.login {
+    width: 238px;
+    height: 48px;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: #0249B3;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.login-btn:hover {
+    background-color: #0367FC;
+    transition: .5s;
+}
+
+/* banner */
+
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner__bg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.banner__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.banner__title {
+    white-space: nowrap;
+    text-align: center;
+    font-size: 64px;
+    color: var(--white);
+    margin-bottom: 60px;
+}
+
+
+/* content1  */
+
+.solution {
+    max-width: var(--width-primary);
+    margin: 0 auto;
+}
+
+.solution__title {
+    font-size: 32px;
+    padding: 50px;
+}
+
+.solution__container {
+    width: 100%;
+    display: flex;
+
+}
+
+.solution__container-box {
+    width: 33.333%;
+}
+
+.solution__container-box img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.solution__container-text1,
+.solution__container-text2 {
+    margin: 50px 0;
+    font-weight: 600;
+}
+
+.solution__container-text1 {
+    text-align: right;
+}
+
+.solution__container-text2 {
+    text-align: left;
+}
+
+/* content2  */
+
+.introduce {
+    margin-top: 234px;
+    width: 100%;
+    background: url("../assets/logo/bg-ct2.png") no-repeat center/cover;
+}
+
+.introduce__main {
+    margin: auto;
+    max-width: var(--width-primary);
+}
+
+.introduce__title {
+    padding-top: 80px;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.introduce__content {
+    text-align: left;
+    padding-bottom: 200px;
+}
+
+/* content3 */
+
+.learning__online {
+    margin: auto;
+    margin-top: 69px;
+    max-width: var(--width-primary);
+}
+
+.learning__online-title {
+    font-size: 32px;
+    margin-bottom: 96px;
+}
+
+.learning__online-container {
+    display: flex;
+    align-items: center;
+}
+
+.learning__online-box+.learning__online-box {
+    margin-left: 98px;
+}
+
+.learning__online-box {
+    width: 50%;
+}
+
+.learning__online-box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.learning__online-box__title,
+.learning__online-box__content {
+    text-align: left;
+}
+
+.learning__online-box__title {
+    font-size: 28px;
+}
+
+.learning__online-box__content {}
+
+/* content4 */
+
+.benefit {
+    margin: auto;
+    max-width: var(--width-primary);
+    margin-top: 175px;
+}
+
+.benefit-title {
+    font-size: 32px;
+    margin-bottom: 144px;
+}
+
+.benefit__container {
+    display: flex;
+}
+
+.benefit__box {
+    min-height: 378px;
+    border-radius: 20px;
+    padding: 0 40px 40px;
+    background: var(--white);
+    box-shadow: 0px 18.829999923706055px 47.08000183105469px 0px rgba(47, 50, 125, 0.10);
+}
+
+.benefit__box+.benefit__box {
+    margin-left: 105px;
+}
+
+.benefit__box-img {
+    margin: auto;
+    margin-top: 62px;
+    margin-bottom: 25px;
+    width: 65px;
+    height: 65px;
+}
+
+.benefit__box-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.benefit__box-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.benefit__box-content {
+    text-align: justify;
+}
+
+/* content5  */
+
+.industries {
+    margin: 144px 0;
+    background: url("../assets/logo/bg-content5.jpg");
+}
+
+.industries__container {
+    max-width: var(--width-primary);
+    margin: auto;
+    padding-bottom: 146px;
+}
+
+.industries-title {
+    font-size: 32px;
+    padding-top: 114px;
+}
+
+.industries__container-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.industries__container-box {
+    margin-top: 188px;
+}
+
+.industries__container-box__img {
+    margin: auto;
+    width: 250px;
+    height: 250px;
+}
+
+.industries__container-box__img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.industries__container-box__title {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/* footer  */
+
+.footer {
+    height: 593px;
+    background: var(--color-footer);
+}
+
+.footer__container {
+    max-width: var(--width-footer);
+    margin: auto;
+    padding-top: 158px;
+}
+
+.footer__container-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__container-content__info+.footer__container-content__info {
+    margin-left: 60px;
+}
+
+.footer__container-content__info {}
+
+
+.footer__container-content__info-title {
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.footer__container-content__info p,
+.footer__container-content__info a {
+    display: block;
+    color: var(--white);
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 18px;
+    text-decoration: none;
+}
+
+.footer__container-content__info a:hover {
+    color: var(--color-primary);
+    transition: .5s;
+}
+
+.footer__container-content__logo {
+    width: 324px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__container-content__logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer-line {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--color-primary);
+}
+
+.footer__copyright {
+    font-size: 14px;
+    color: var(--white);
+    text-align: left;
+}

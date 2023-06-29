@@ -1,0 +1,12 @@
+@media only screen and (max-width : 1590px) {
+
+    .header,
+    .solution,
+    .introduce__main,
+    .learning__online,
+    .benefit,
+    .industries__container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
